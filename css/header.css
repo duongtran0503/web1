@@ -1,0 +1,192 @@
+:root {
+  --primary-color: linear-gradient(to top, #f43b47 0%, #b9094feb 100%);
+}
+.container-header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: var(--primary-color);
+  top: 0;
+  z-index: 100;
+}
+.container-header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 30px;
+  border-bottom: 1px solid rebeccapurple;
+}
+.header {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .header-top {
+  padding: 0 10px;
+  background: transparent;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-top h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .header-top .header-top-right {
+  width: auto;
+  height: 100%;
+  font-size: 14px;
+  display: flex;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.header .header-top .header-top-right .header-top__title-right-2 {
+  color: aliceblue;
+  white-space: 5px;
+}
+.header .header-bottom {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  background: rgb(255, 255, 255);
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+}
+.header .header-bottom .logo {
+  width: 200px;
+  height: 55px;
+  display: flex;
+  column-gap: 10px;
+}
+.header .header-bottom .logo .logo-img {
+  width: 50px;
+  height: 50px;
+}
+.header .header-bottom .logo .logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header .header-bottom .logo .logo-title {
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .logo .logo-title h2 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 600;
+}
+.header .header-bottom .logo .logo-title h2 span {
+  color: red;
+  text-decoration: underline;
+}
+.header .header-bottom .header__navigation {
+  width: 400px;
+  height: 40px;
+}
+.header .header-bottom .header__navigation ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-bottom .header__navigation ul li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.header .header-bottom .header__navigation ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.header .header-bottom .header__navigation ul li.active::after {
+  display: block;
+}
+
+.header .header-bottom .header__buttons {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.header .header-bottom .header__buttons .button-ship {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-bottom .header__buttons .button-ship div {
+  width: 30px;
+  height: 30px;
+}
+.header .header-bottom .header__buttons .button-ship div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header .header-bottom .header__buttons .button-ship .ship-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.header .header-bottom .header__buttons .button-cart {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-bottom .header__buttons .button-login,
+.button-logout {
+  width: 90px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.header .header-bottom .header__buttons .button-login:hover,
+.button-logout:hover {
+  box-shadow: unset;
+  border: 1px solid black;
+  font-size: 17px;
+}
