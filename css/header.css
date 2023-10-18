@@ -1,5 +1,21 @@
 :root {
-  --primary-color: linear-gradient(to top, #f43b47 0%, #b9094feb 100%);
+  --primary-color: linear-gradient(
+    41deg,
+    rgba(187, 47, 47, 1) 14%,
+    rgba(211, 0, 0, 0.9725140056022409) 48%,
+    rgba(177, 26, 26, 1) 91%,
+    rgba(226, 1, 1, 1) 100%,
+    rgba(254, 0, 0, 0) 100%
+  );
+
+  --primary-boxshadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  --primary-color-button: linear-gradient(
+    to right,
+    #f4772e 10%,
+    #fc5a2d 40%,
+    #f40009 80%,
+    #d60404 100%
+  );
 }
 .container-header {
   position: fixed;

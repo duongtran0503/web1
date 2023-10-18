@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+  <body>
+    <section class="container">
+      <section id="header" class="container-header"></section>
+      <section class="container-form">
+        <form class="form">
+          <div class="inputbox-name">
+            <label for="name">Họ Tên</label>
+            <input type="text" id="name" placeholder="" />
+            <span class="input-error"></span>
+          </div>
+
+          <div class="inputbox-email">
+            <label for="email">email</label>
+            <input type="text" id="email" placeholder="usernam@gamil.com" />
+            <span class="input-error"></span>
+          </div>
+        </form>
+      </section>
+    </section>
+  </body>
+  <script src="../js/LoadHTML.js"></script>
+  <script>
+    Load("header", "../components/header.html");
+  </script>
+</html>
